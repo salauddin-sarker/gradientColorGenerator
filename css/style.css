@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background: linear-gradient(to left top, #7058e9, #c068b4);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.wrapper{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 25px;
+    width: 450px;
+}
+.wrapper .gradient_box{
+    background: linear-gradient(to left top, #c14444, #202b74);
+    border-radius: 7px;
+    height: 220px;
+    width: 100%;
+}
+.wrapper .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.row :where(.column, button){
+    width: calc(100% / 2 - 12px);
+}
+.options p{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.options .select_box{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.select_box select{
+    background: none;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+}
+.options .colors{
+    margin-left: 60px;
+    /* background-color: #fb0303; */
+}
+.colors input{
+height: 41px;
+width: calc(100% / 2 - 20px);
+}
+.colors input:last-child{
+    margin-left: 6px;
+}
+.wrapper textarea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    font-size: 17px;
+    padding: 10px 15px;
+    resize: none;
+    width: 100%;
+}
+.buttons button{
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+    margin: 0 0 -15px;
+    padding: 15px 0;
+}
+.buttons .refresh{
+    background-color: #6c757d;
+}
+.buttons .copy{
+    background-color: #8a6cff;
+}
